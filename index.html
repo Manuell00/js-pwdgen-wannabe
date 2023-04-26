@@ -5,16 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Inserisco il cdn di font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Inserisco il cdn di Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Inserisco il title -->
     <title>Fake Password</title>
+
+    <!-- Inserisco il link al css -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <!-- Il mio testo verrà sovrascritto dal mio comando js -->
-    <p id="mio_nome"></p>
-    <p id="mio_cognome"></p>
-    <p id="mio_colore"></p>
-    <p id="mio_numero"></p>
-    <p id="mia_password"></p>
+    <!-- HEADER -->
+    <!-- Inserisco un titolo per il generatore di fake password -->
+    <header>
+        <div class="container-fluid text-center">
+            <div class="row align-items-center justify-content-center" id="header-row">
+                <div class="col-xs-10 col-md-6">
+                    <h1> Fake Password Generator </h1>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- Inserisco il mio form -->
+        <!-- Il mio testo verrà sovrascritto dal mio comando js -->
+        <div class="container-fluid text-center">
+            <div class="row align-items-center justify-content-center" id="main-row">
+                <div class="col-xs-10 col-md-8">
+
+                    <!-- CARD -->
+                    <div class="card mb-3" id="main-card">
+
+                        <!-- Inserisco l'immagine della card -->
+                        <div class="main-card-image">
+                            <img src="img/hacker66.jpg" class="card-img-top" alt="Hacker-img">
+                        </div>
+
+                        <!-- Inserisco il corpo della carta centrale del main -->
+                        <div class="card-body">
+                            <h3 class="card-title">Password Card</h3>
+                            <p class="card-text">This is a card that, thanks to your inputs, is able to generate a
+                                password that is very easy to discover</p>
+
+                            <!-- Inserisco la mia list items -->
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Name : <span id="mio_nome"></span></li>
+
+                                <li class="list-group-item">Surname : <span id="mio_cognome"></span></li>
+
+                                <li class="list-group-item">Color : <span id="mio_colore"></span></li>
+
+                                <li class="list-group-item">Number : <span id="mio_numero"></span></li>
+
+                                <li class="list-group-item">Password : <span id="mia_password"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
 
     <!-- Carico il mio file javascript -->
     <script type="text/javascript" src="main.js"></script>
