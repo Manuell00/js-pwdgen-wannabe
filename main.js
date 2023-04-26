@@ -22,3 +22,11 @@ password = nome+cognome+colore+numero
 
 // Stampo a schermo la password
 document.getElementById("mia_password").innerHTML = password
+
+// Creo la funzione per copiare il testo
+function copyText() {
+      
+    /* Copy text into line password */
+    navigator.clipboard.writeText
+        (password);
+}
